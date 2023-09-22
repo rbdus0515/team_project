@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    font-family: Gowun Dodum;
+
+    box-sizing: border-box;
+}
+
+footer{
+    width: 1900px;
+    height: 92px;
+
+    background-color: #e5e5e5;
+}
+
+.footer{
+    display: flex;
+}
+
+footer > section> a > img{
+    width: 47px;
+    height: 57px;
+}
+
+.logo{
+    flex-basis: 2%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    flex-basis: 18%;
+
+    display: flex;
+    align-items: end;
+
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footerInformation{
+    flex-basis: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerInformation a{
+    color: #000000;
+    text-decoration: none;
+    
+}
+
