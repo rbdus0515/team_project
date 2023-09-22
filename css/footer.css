@@ -6,26 +6,24 @@
 }
 
 footer{
-    width: 1900px;
+    width: 1920px;
     height: 92px;
 
     background-color: #e5e5e5;
-}
-
-.footer{
+    
     display: flex;
 }
 
-footer > section> a > img{
-    width: 47px;
-    height: 57px;
-}
-
-.logo{
+.logoSection{
     flex-basis: 2%;
     margin: 0 10px;
     display: flex;
     align-items: center;
+}
+
+.logo{
+    width: 47px;
+    height: 57px;
 }
 
 .copyright{
