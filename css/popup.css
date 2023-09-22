@@ -132,6 +132,14 @@
     margin-top: 5px;
     background-color: #fff;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+  background-color: #868686;
+  color: #fff;
+  transition-duration: 0.3s;
+
 }
 
 

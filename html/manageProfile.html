@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 관리</title>
+
+    <link rel="stylesheet" href="/css/manegeProfile.css" type="text/css">
+</head>
+
+<body>
+
+    <main class="mainContainer">
+
+        <form action="#" method="post">
+
+
+            
+            <div class="profileContainer">
+
+                <div class="imgContainer">
+
+                    <div class="img-wrapper">
+                        <img src="/images/춘식.png">
+                    </div>
+
+                    <div class="btn">
+                        <label for="chooseFile">
+                            프로필 사진 변경
+                        </label>
+                    </div>
+                    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+
+                </div>
+
+
+
+                <section class="myInfo">
+
+                    <div>
+                        <p>아이디</p>
+                        <input class="input" type="text" name="id" value="jklee0424" disabled>
+                    </div>
+
+                    <div>
+                        <p>비밀번호</p>
+                        <input class="input" type="password" name="pw">
+                    </div>
+
+                    <div>
+                        <p>비밀번호 확인</p>
+                        <input class="input" type="password" name="pwCheck">
+                    </div>
+
+                    <div>
+                        <p>이름</p>
+                        <input class="input" type="text" name="name" value="이재경" disabled>
+                    </div>
+
+                    <div>
+                        <p>이메일</p>
+                        <input class="input" type="email" name="name">
+                    </div>
+
+                    <div>
+                        <p>전화번호</p>
+                        <input class="input" type="tel" name="name" placeholder="- 제외">
+                    </div>
+
+                    <div>
+                        <p>닉네임</p>
+                        <input class="input" type="text" name="name">
+                    </div>
+
+
+                </section>
+
+                <section class="btnContainer">
+                    <button class="btn" type="submit">수정</button>
+                    <button class="btn" type="submit">회원 탈퇴</button>
+                </section>
+
+
+
+
+            </div>
+
+        </form>
+    </main>
+
+    <script src="/js/manageProfile.js"></script>
+
+</body>
+
+</html>
