@@ -1,0 +1,110 @@
+/* 글꼴 모음 */
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 */
+* {
+    box-sizing: border-box;
+    font-family: 'GowunDodum-Regular';
+}
+
+/* 섹션 나누는 줄 */
+/* div, section {
+    border: 1px solid black;
+} */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 섹션 나누기 */
+body > section {
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* top */
+section > div:nth-child(1) {
+    height: 15%;
+}
+
+/* bottom */
+section > div:nth-child(2) {
+    height: 85%;
+    display: flex;
+}
+
+/* bottom:left, right */
+section > div:nth-child(2) > div:nth-child(1),
+section > div:nth-child(2) > div:nth-child(3) {
+    flex-basis: 10%;
+}
+
+/* botton:center */
+.notice-content {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice-content > div {
+    flex-basis: calc(100%/17);
+}
+
+.notice-content > div:nth-child(3),
+.notice-content > div:nth-child(5),
+.notice-content > div:nth-child(7),
+.notice-content > div:nth-child(9),
+.notice-content > div:nth-child(11),
+.notice-content > div:nth-child(13),
+.notice-content > div:nth-child(15) {
+    display: flex;
+}
+
+.notice-content > div:nth-child(3) > div:nth-child(1),
+.notice-content > div:nth-child(5) > div:nth-child(1),
+.notice-content > div:nth-child(7) > div:nth-child(1),
+.notice-content > div:nth-child(9) > div:nth-child(1),
+.notice-content > div:nth-child(11) > div:nth-child(1),
+.notice-content > div:nth-child(13) > div:nth-child(1),
+.notice-content > div:nth-child(15) > div:nth-child(1) {
+    flex-basis: 80%;
+    padding-left: 20px;
+}
+
+.notice-content > div:nth-child(3) > div:nth-child(2),
+.notice-content > div:nth-child(5) > div:nth-child(2),
+.notice-content > div:nth-child(7) > div:nth-child(2),
+.notice-content > div:nth-child(9) > div:nth-child(2),
+.notice-content > div:nth-child(11) > div:nth-child(2),
+.notice-content > div:nth-child(13) > div:nth-child(2),
+.notice-content > div:nth-child(15) > div:nth-child(2) {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.notice-content {
+    font-size: 25px;
+}
+
+.notice-content > div:nth-child(1) {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
