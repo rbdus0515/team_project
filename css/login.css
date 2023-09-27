@@ -7,6 +7,8 @@
 }
 
 #homelogo{
+    width: 47px;
+    height: 57px;
     margin: 20px;
 }
 
@@ -84,9 +86,9 @@ section{
 }
 
 hr{
-    width: 286px;
-    color: #000000 1px;
-    margin: 40px 0 20px 0 ;
+    width: 20em;
+    margin: 2em 0;
+    border: 0.1px solid #bebebe;
 }
 
 .snsLogin{

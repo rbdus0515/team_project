@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기</title>
+
+    <link rel="stylesheet" href="/team_project/css/findId.css">
+</head>
+
+<body>
+
+    <a href="#">
+        <img id="homelogo" class="logo" src="/team_project/images/logo.png" alt="">
+    </a>
+
+    <main>
+
+        <p class="findIdTitle">아이디 찾기</p>
+
+        <form action="#" method="post">
+
+            <section class="findIdContainer">
+                
+                <div>
+                    <label for="findIdByPhone">
+                        <input type="radio" name="wayToFindId" id="findIdByPhone"> 
+                        등록된 휴대전화로 인증하기
+                    </label>
+                    
+                    <div class="contentContainer">
+
+                        <p>이름</p>
+                        <input type="text" name="name">
+    
+                        <div>
+                            <p>전화번호</p>
+                            <input type="tel" name="phone" placeholder="'-' 제외">
+                            <button type="button" id="certifyBtn">인증번호 받기</button>
+                        </div>
+    
+                        <p>인증번호</p>
+                        <input type="text" name="" >
+
+                    </div>
+
+                    <hr>
+                </div>
+                
+
+                <div>
+                    <label for="findIdByEmail">
+                        <input type="radio" name="wayToFindId" id="findIdByEmail">
+                        이메일로 인증하기
+                    </label>
+
+                    <div class="contentContainer">
+
+                        <p>이름</p>
+                        <input type="text" name="name">
+    
+                        <p>이메일</p>
+                        <input type="tel" name="phone">
+    
+                        <p>인증번호</p>
+                        <input type="text" name="" >
+
+                    </div>
+
+                    <hr>    
+                </div>
+                
+                
+                <div>
+                    <label for="findIdByIpin">
+                        <input type="radio" name="wayToFindId" id="findIdByIpin">
+                        아이핀으로 인증하기
+                    </label>
+                    
+                </div>
+
+                <button id="submitBtn">아이디 찾기</button>
+                
+            </section>
+            
+        </form>
+
+    </main>
+
+
+
+</body>
+
+</html>

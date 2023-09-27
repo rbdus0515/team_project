@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gowun Dodum;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#homelogo{
+    width: 47px;
+    height: 57px;
+    margin: 20px;
+}
+
+hr{
+    width: 25em;
+    margin: 1.5em 0;
+    border: 0.1px solid #bebebe;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.findIdTitle{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.findIdContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.contentContainer > input{
+    border: none;
+    width: 20em;
+    height: 2em;
+    border-radius: 10px;
+    padding: 1em;
+    
+    margin: 0.3em 0;
+}
+
+.contentContainer > div > input{
+    border: none;
+    width: 20em;
+    height: 2em;
+    border-radius: 10px;
+    padding: 1em;
+    
+    margin: 0.3em 0;
+}
+
+#certifyBtn{
+    border: none;
+    background-color: #fff;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#certifyBtn:hover{
+    background-color: #868686;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+
+.findIdContainer > div > label> input{
+    margin-bottom: 1em;
+}
+
+#submitBtn{
+    width: 10em;
+    background-color: #fff;
+
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+    cursor: pointer;
+
+    align-self: center;
+}
+
+#submitBtn:hover{
+    background-color: #868686;
+    color: #fff;
+    transition-duration: 0.3s;
+}
