@@ -1,233 +1,252 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Gowun Dodum;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gowun Dodum;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.container{
-    width: 1200px;
-    height: 700px;
+.container {
+  width: 800px;
+  height: 525px;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.popupTitle{
-    display: flex;
-
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.photoSection img{
-    width: 458px;
-    height: 463px;
-
-    border-radius: 10px;
-}
-
-.popupFooter{
-    display: flex;
-
-    justify-content: space-around;
-    margin : 20px 0;
-}
-
-.popupFooter a{
-    color: #000000;
-    text-decoration: none;
-}
-
-.explainSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.explainContainer{
-    width: 540px;
-    height: 206px;
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-
-    background-color: #e6e6e6 ;
-}
-
-.title{
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.explain{
-    width: 514px;
-    height: 139px;
-    background-color: #fff;
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.explain p{
-    margin: 0 15px;
-}
-
-.commentContainer{
-    width: 540px;
-    height: 400px;
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-
-    background-color: #e6e6e6 ;
-}
-
-.comment{
-    width: 470px;
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-.textArea{
-    display: flex;
-    flex-direction: column;
-
-    align-items: end;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
 }
 
 
-.commentArea{
-    width: 470px;
-    height: 142px;
-    margin-top: 10px;
-    border-radius: 10px;
-
-    border: none;
-
-    padding: 10px;
+.photoSection {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.button{
-    width: 58px;
-    height: 26px;
-    border: none;
-
-    margin-top: 5px;
-    background-color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
+.popupImg {
+  display: flex;
+  justify-content: center;
 }
 
-.button:hover{
+.popupTitle {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.explainSection {
+  flex-basis: 50%;
+}
+
+.photoSection img {
+  width: 343px;
+  height: 348px;
+  border-radius: 10px;
+}
+
+.popupFooter {
+  width: 80%;
+  display: flex;
+
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.popupFooter a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.explainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explainContainer {
+  width: 90%;
+  height: 130px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+
+  background-color: #e6e6e6;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.explain {
+  width: 95%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.explain p {
+  font-size: 0.8rem;
+  margin: 0 10px;
+}
+
+.commentContainer {
+  width: 90%;
+  height: 300px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e6e6e6;
+}
+
+.comment {
+  width: 95%;
+  height: 10%;
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.comment > p{
+  font-size: 0.8rem;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+
+  align-items: end;
+}
+
+.commentArea {
+  width: 21rem;
+  height: 8rem;
+  margin-top: 5px;
+  border-radius: 10px;
+
+  padding: 10px;
+  border: none;
+}
+
+.button {
+  width: 3rem;
+  height: 1.5rem;
+  border: none;
+
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
   background-color: #868686;
   color: #fff;
   transition-duration: 0.3s;
-
 }
 
 
 
 /* -------------------- 하트 이미지 css ------------------------------------*/
 .heart-container {
-    --heart-color: #F44336;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    transition: .3s;
+  --heart-color: #F44336;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
   }
-  
-  .heart-container .checkbox {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
     opacity: 0;
-    z-index: 20;
-    cursor: pointer;
-  }
-  
-  .heart-container .svg-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .heart-container .svg-outline,
-          .heart-container .svg-filled {
-    fill: var(--heart-color);
-    position: absolute;
-  }
-  
-  .heart-container .svg-filled {
-    animation: keyframes-svg-filled 1s;
     display: none;
   }
-  
-  .heart-container .svg-celebrate {
-    position: absolute;
-    animation: keyframes-svg-celebrate .5s;
-    animation-fill-mode: forwards;
-    display: none;
-    stroke: var(--heart-color);
-    fill: var(--heart-color);
-    stroke-width: 2px;
-  }
-  
-  .heart-container .checkbox:checked~.svg-container .svg-filled {
-    display: block
-  }
-  
-  .heart-container .checkbox:checked~.svg-container .svg-celebrate {
-    display: block
-  }
-  
-  @keyframes keyframes-svg-filled {
-    0% {
-      transform: scale(0);
-    }
-  
-    25% {
-      transform: scale(1.2);
-    }
-  
-    50% {
-      transform: scale(1);
-      filter: brightness(1.5);
-    }
-  }
-  
-  @keyframes keyframes-svg-celebrate {
-    0% {
-      transform: scale(0);
-    }
-  
-    50% {
-      opacity: 1;
-      filter: brightness(1.5);
-    }
-  
-    100% {
-      transform: scale(1.4);
-      opacity: 0;
-      display: none;
-    }
-  }
-  /* -------------------- 하트 이미지 css ------------------------------------*/
+}
+
+/* -------------------- 하트 이미지 css ------------------------------------*/
