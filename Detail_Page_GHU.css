@@ -47,6 +47,10 @@ body > section > div:nth-child(1) {
     flex-basis: 25%;
     background-image: url("images/CHU/충청메인이미지.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
     line-height: 300px;
     font-size: 4rem;
     padding-left: 1300px;
@@ -79,6 +83,8 @@ body > section > div:nth-child(2) > div:nth-child(2) {
 .images > div {
     flex-basis: calc(100%/3);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .images > div > div {
@@ -125,12 +131,6 @@ body > section > div:nth-child(2) > div:nth-child(2) {
 /* 반응형 모바일 기준 */
 /* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용 */
 @media all and (max-width:767px) {
-    
-    .images > div {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
 
     #div1, #div3 {
         display: none;
