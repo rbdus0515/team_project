@@ -57,6 +57,12 @@ main {
     margin-right: 20px;
 }
 
+.profileImg a:hover{
+    background-color: #868686;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
 .imgWrapper{
     margin-bottom: 10px;
 }
@@ -120,6 +126,12 @@ main {
     border-radius: 10px;
     text-decoration: none;
     color: #000;
+}
+
+.managingContent a:hover{
+    background-color: #868686;
+    color: #fff;
+    transition-duration: 0.3s;
 }
 
 #newAlarm{
