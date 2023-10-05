@@ -35,6 +35,7 @@ body>section {
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 .content {
@@ -69,12 +70,12 @@ body>section {
 .askContent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     justify-content: space-between;
 }
 
 .askDetail {
-    width: 40%;
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
@@ -161,4 +162,26 @@ body>section {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+}
+
+@media all and (max-width:767px) {
+
+    #l_blank, #r_blank {
+        display: none;
+    }
+    .askBtn{
+        width: 7rem;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .topTitle{
+        margin: 20px 0;
+    }
 }

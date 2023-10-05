@@ -4,18 +4,34 @@
   font-family: Gowun Dodum;
 
   box-sizing: border-box;
+  
+}
+.mainContainer{
+  width: 800px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#closeBtn {
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+#closeBtn > img{
+  width: 1rem;
 }
 
 .container {
-  width: 800px;
-  height: 525px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
 }
-
 
 .photoSection {
   flex-basis: 50%;
