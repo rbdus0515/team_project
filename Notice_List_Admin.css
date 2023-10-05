@@ -1,0 +1,131 @@
+/* 글꼴 모음 */
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 */
+* {
+    box-sizing: border-box;
+    font-family: 'GowunDodum-Regular';
+}
+
+/* 섹션 나누는 줄 */
+/* div, section {
+    border: 1px solid black;
+} */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 섹션 나누기 */
+body > section {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* top(상단 공백 영역) */
+#top {
+    flex-basis: 12%;
+}
+
+/* content(공지사항 내용) */
+#content {
+    flex-basis: 88%;
+    display: flex;
+}
+
+/* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */
+#l_blank, #r_blank {
+    flex-basis: 20%;
+}
+
+/* content:center(가운데 내용 영역) */
+#main {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+#main > div {
+    flex-basis: calc(100%/20);
+}
+
+.m_cont {
+    display: flex;
+    font-size: 20px;
+}
+
+/* 공지사항 제목 영역 */
+.m_cont_tit {
+    flex-basis: 80%;
+    padding-left: 20px;
+}
+
+/* 공지사항 등록일자 영역 */
+.m_cont_dt {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 공지사항 대제목 */
+#m_tit {
+    font-size: 1.9rem;
+    font-weight: bold;
+    display: flex;
+}
+
+/* 공지사항 대제목 영역 */
+#m_tit > div:nth-child(1) {
+    flex-basis: 11%;
+}
+
+/* 플러스 버튼 영역 */
+#m_tit > div:nth-child(2) {
+    flex-basis: 89%;
+    display: flex;
+    margin-top: 7px;
+}
+
+/* 플러스(추가) 버튼 */
+#plus-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+#plus-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+/* 페이지 번호 영역 */
+#p_move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 페이지 번호 */
+#num {
+    padding: 0px 100px;
+    font-size: 20px;
+}
+
+/* 페이지 넘김 버튼 */
+#left-btn, #right-btn {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
