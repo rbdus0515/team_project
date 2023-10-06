@@ -80,7 +80,7 @@ body > section {
 
 /* bottom: images */
 .row {
-    flex-basis: calc(100%/3);
+    flex-basis: calc(100%/4);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,3 +137,22 @@ body > section {
 
 }
 
+/* ------------------ 관리자 ------------------ */
+#plus-btn {
+    border: none;
+    border-radius: 20px;
+    width: 220px;
+    height: 260px;
+    background-color: #ddd;
+    font-size: 40px;
+}
+
+#plus-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: white;
+}
+
+/* #row-plus {
+    display: none;
+} */
