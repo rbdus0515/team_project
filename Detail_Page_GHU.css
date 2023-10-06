@@ -42,7 +42,7 @@ body > section {
 }
 
 /* top */
-body > section > div:nth-child(1) {
+#top {
     font-family: 'Arita-buri-SemiBold';
     flex-basis: 25%;
     background-image: url("images/CHU/충청메인이미지.png");
@@ -57,47 +57,46 @@ body > section > div:nth-child(1) {
 }
 
 /* bottom */
-body > section > div:nth-child(2) {
+#bottom {
     flex-basis: 75%;
     display: flex;
 }
 
-body > section > div:nth-child(2) > div:nth-child(1),
-body > section > div:nth-child(2) > div:nth-child(3) {
+#div1, #div3 {
     flex-basis: 20%;
 }
 
-body > section > div:nth-child(2) > div:nth-child(3) {
+#div3 {
     position: fixed;
     margin-left: 1800px;
     margin-top: 150px;
 }
 
-body > section > div:nth-child(2) > div:nth-child(2) {
+.images {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
 }
 
 /* bottom: images */
-.images > div {
+.row {
     flex-basis: calc(100%/3);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.images > div > div {
+.place-sec {
     flex-basis: calc(100%/4);
     display: flex;
     flex-direction: column;
 }
 
-.images > div > div > div:nth-child(1) {
+.blank {
     flex-basis: 30%;
 }
 
-.images > div > div > div:nth-child(2) {
+.place-img {
     flex-basis: 50%;
 }
 
@@ -107,7 +106,7 @@ body > section > div:nth-child(2) > div:nth-child(2) {
     border-radius: 10px;
 }
 
-.images > div > div > div:nth-child(3) {
+.place-tit {
     flex-basis: 20%;
 }
 
