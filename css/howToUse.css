@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gowun Dodum;
+  
+    box-sizing: border-box;
+  }
+
+
+.imageContainer{
+    max-width: 25rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imageList{
+    white-space: nowrap;
+    font-size: 0;
+}
+
+li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+a{
+    display: block;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.imageList label{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px;
+    cursor: pointer;
+}
+
+.left{
+    background: url('/team_project/images/left.png') center center / 20% no-repeat;
+}
+
+.right{
+    right: 0%;
+    background: url('/team_project/images/right.png') center center / 20% no-repeat;
+}
+
+
+.radioBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.radioBtn > input{
+    margin: 0 5px;
+}
+
+[id="select_box1"]:checked ~ li {transform: translateX(0%);}
+[id="select_box2"]:checked ~ li {transform: translateX(-100%);}
+[id="select_box3"]:checked ~ li {transform: translateX(-200%);}
+[id="select_box4"]:checked ~ li {transform: translateX(-300%);}
+[id="select_box5"]:checked ~ li {transform: translateX(-400%);}
+[id="select_box6"]:checked ~ li {transform: translateX(-500%);}
+[id="select_box7"]:checked ~ li {transform: translateX(-600%);}
+[id="select_box8"]:checked ~ li {transform: translateX(-700%);}

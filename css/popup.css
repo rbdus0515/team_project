@@ -4,8 +4,8 @@
   font-family: Gowun Dodum;
 
   box-sizing: border-box;
-  
 }
+
 .mainContainer{
   width: 800px;
   height: 525px;
@@ -18,7 +18,7 @@
   background-color: transparent;
   border: none;
   align-self: flex-end;
-  margin: 10px 10px;
+  margin: 10px;
   cursor: pointer;
 }
 
