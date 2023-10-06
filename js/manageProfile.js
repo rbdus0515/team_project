@@ -21,3 +21,21 @@ function loadFile(input) {
     var container = document.getElementById('image-show');
     container.appendChild(newImage);
 };
+
+
+const test = document.getElementById("test");
+const testClose = document.getElementById("closeBtn")
+let popup;
+
+test.addEventListener("click", () => {
+
+  popup = window.open("popup.html", "a", "width=800, height=525"); 
+
+
+});
+
+testClose.addEventListener("click", () => {
+  
+  popup.close();
+
+})

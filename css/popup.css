@@ -43,6 +43,10 @@
 .popupImg {
   display: flex;
   justify-content: center;
+  width: 343px;
+  height: 348px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .popupTitle {
@@ -54,12 +58,6 @@
 
 .explainSection {
   flex-basis: 50%;
-}
-
-.photoSection img {
-  width: 343px;
-  height: 348px;
-  border-radius: 10px;
 }
 
 .popupFooter {
