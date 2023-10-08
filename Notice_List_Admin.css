@@ -60,13 +60,13 @@ body > section {
 
 .m_cont {
     display: flex;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* 공지사항 제목 영역 */
 .m_cont_tit {
     flex-basis: 80%;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 /* 공지사항 등록일자 영역 */
@@ -92,7 +92,7 @@ body > section {
 #m_tit > div:nth-child(2) {
     flex-basis: 89%;
     display: flex;
-    margin-top: 7px;
+    margin-top: 0.4375rem;
 }
 
 /* 플러스(추가) 버튼 */
@@ -124,8 +124,18 @@ body > section {
 
 /* 페이지 넘김 버튼 */
 #left-btn, #right-btn {
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
     background-color: transparent;
     color: gray;
+}
+
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용 */
+@media all and (max-width:767px) {
+
+    #m_tit > div:nth-child(1) {
+        flex-basis: 60%;
+    }
+
 }
