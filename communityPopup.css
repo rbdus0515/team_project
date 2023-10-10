@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+#communityPopup-container {
+    width: 42rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#communityPopup-container > section:nth-of-type(1) {
+    flex-basis: 15%;
+    display: flex;
+}
+
+#com-top-l-sec {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#com-top-l-sec > section:nth-of-type(1) {
+    flex-basis: 65%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#com-top-l-sec > section:nth-of-type(2) {
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+#com-cuteGhost {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+}
+
+#com-top-m-sec {
+    flex-basis: 78%;
+    display: flex;
+    align-items: center;
+}
+
+#com-top-r-sec {
+    flex-basis: 7%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+#com-XIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#com-top-m-sec > div {
+    width: 32rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #E0DEDE;
+    border-radius: 20px;
+}
+
+#communityPopup-container > section:nth-of-type(2){
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#com-pop-mainComment {
+    width: 39rem;
+    height: 14rem;
+    border-radius: 20px;
+    background-color: #E0DEDE;
+    display: flex;
+    flex-direction: column;
+}
+
+#com-pop-mainComment > section:nth-of-type(1) {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#com-pop-mainComment > section:nth-of-type(1) > textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+
