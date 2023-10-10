@@ -4,105 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/team_project/css/howToUse.css" type="text/css">
+    <title>이용 방법</title>
+    <link rel="stylesheet" href="/team_project/css/howToUse.css">
 </head>
 
 <body>
 
-    <section class="popupContainer">
+    <div class="mainContainer">
 
+        <button type="button" id="closeBtn">
+            <img src="/team_project/images/X버튼.png" alt="">
+        </button>
 
+        <div class="wrap">
 
-
-        <div class="slideContainer">
-
+            <input type="radio" class="radio_button" id="radio_1" name="slider" checked />
+            <input type="radio" class="radio_button" id="radio_2" name="slider" />
+            <input type="radio" class="radio_button" id="radio_3" name="slider" />
+            <input type="radio" class="radio_button" id="radio_4" name="slider" />
+            <input type="radio" class="radio_button" id="radio_5" name="slider" />
+            <input type="radio" class="radio_button" id="radio_6" name="slider" />
+            <input type="radio" class="radio_button" id="radio_7" name="slider" />
+            <input type="radio" class="radio_button" id="radio_8" name="slider" />
            
-            <div class="imageContainer">
+          
+            <!-- <div class="radio-inputs">
 
-                <ul class="imageList">
-                    <li>
-                        <a>
-                            <img src="/team_project/images/1) 나의 일정 이용방법 1.png" alt="">
-                            <label class="right" for="select_box2"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box1"></label>
-                            <img src="/team_project/images/2) 팝업창 이용방법.png" alt="">
-                            <label class="right" for="select_box3"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box2"></label>
-                            <img src="/team_project/images/3) 나의 일정 이용방법2.png" alt="">
-                            <label class="right" for="select_box4"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box3"></label>
-                            <img src="/team_project/images/4) 나의 일정 이용방법3.png" alt="">
-                            <label class="right" for="select_box5"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box4"></label>
-                            <img src="/team_project/images/5) 마이 페이지 이용방법 1.png" alt="">
-                            <label class="right" for="select_box6"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box5"></label>
-                            <img src="/team_project/images/6) 마이 페이지 이용방법 2.png" alt="">
-                            <label class="right" for="select_box7"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box6"></label>
-                            <img src="/team_project/images/7) 고객지원 이용방법 1.png" alt="">
-                            <label class="right" for="select_box8"></label>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <label class="left" for="select_box7"></label>
-                            <img src="/team_project/images/8) 고객지원 이용방법 2.png" alt="">
-                        </a>
-                    </li>
+                <label class="radio" for="radio_1" >
+                  <input type="radio" name="radio" id="radio_1" class="radio_button" checked>
+                  <span class="name">1</span>
+                </label>
 
-                </ul>
+                <label class="radio" for="radio_2">
+                  <input type="radio" name="radio" class="radio_button" id="radio_2" >
+                  <span class="name">2</span>
+                </label>
+                    
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_3">
+                  <span class="name">3</span>
+                </label>
 
-                <div class="radioBtn">
-                    <input type="radio" name="slide" id="select_box1" checked>
-                    <input type="radio" name="slide" id="select_box2">
-                    <input type="radio" name="slide" id="select_box3">
-                    <input type="radio" name="slide" id="select_box4">
-                    <input type="radio" name="slide" id="select_box5">
-                    <input type="radio" name="slide" id="select_box6">
-                    <input type="radio" name="slide" id="select_box7">
-                    <input type="radio" name="slide" id="select_box8">
-                </div>
-    
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_4">
+                  <span class="name">4</span>
+                </label>
 
-            </div>
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_5">
+                  <span class="name">5</span>
+                </label>
 
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_6">
+                  <span class="name">6</span>
+                </label>
 
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_7">
+                  <span class="name">7</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="radio" class="radio_button" id="radio_8">
+                  <span class="name">8</span>
+                </label>
+
+            </div> -->
+            <ul class="slide">
+            
+                <li class="slide_item">
+                    <img src="/team_project/images/1) 나의 일정 이용방법 1.png" alt="">
+                    <label class="right" for="radio_2"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_1"></label>
+                    <img src="/team_project/images/2) 팝업창 이용방법.png" alt="">
+                    <label class="right" for="radio_3"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_2"></label>
+                    <img src="/team_project/images/3) 나의 일정 이용방법2.png" alt="">
+                    <label class="right" for="radio_4"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_3"></label>
+                    <img src="/team_project/images/4) 나의 일정 이용방법3.png" alt="">
+                    <label class="right" for="radio_5"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_4"></label>
+                    <img src="/team_project/images/5) 마이 페이지 이용방법 1.png" alt="">
+                    <label class="right" for="radio_6"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_5"></label>
+                    <img src="/team_project/images/6) 마이 페이지 이용방법 2.png" alt="">
+                    <label class="right" for="radio_7"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_6"></label>
+                    <img src="/team_project/images/7) 고객지원 이용방법 1.png" alt="">
+                    <label class="right" for="radio_8"></label>
+                </li>
+                <li class="slide_item">
+                    <label class="left" for="radio_7"></label>
+                    <img src="/team_project/images/8) 고객지원 이용방법 2.png" alt="">
+                </li>
+            </ul>
+
+     
 
         </div>
+      
 
-
-
-
-
-    </section>
-
+    </div>
+    
 </body>
 
 </html>

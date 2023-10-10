@@ -1,72 +1,145 @@
-* {
-    margin: 0;
+.mainContainer{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#closeBtn {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#closeBtn>img {
+    width: 1rem;
+}
+
+.wrap {
+    position: relative;
+
+    width: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    display: none;
+}
+
+.slide {
     padding: 0;
-    font-family: Gowun Dodum;
-  
-    box-sizing: border-box;
-  }
-
-
-.imageContainer{
-    max-width: 25rem;
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
     overflow: hidden;
 }
 
-.imageList{
-    white-space: nowrap;
-    font-size: 0;
+.slide_item {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
 }
 
-li{
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    transition: all .5s;
+.slide_item img {
+    width: 50rem;
 }
 
-a{
-    display: block;
-    position: relative;
+.radio_button {
+    margin: 0;
 }
 
-img {
-    width: 100%;
-}
-
-.imageList label{
+.slide_item label {
     position: absolute;
     z-index: 10;
     top: 50%;
-    transform: translateY(-50%);
     padding: 30px;
     cursor: pointer;
 }
 
-.left{
+.left {
+    left: 0%;
     background: url('/team_project/images/left.png') center center / 20% no-repeat;
 }
 
-.right{
+.right {
     right: 0%;
     background: url('/team_project/images/right.png') center center / 20% no-repeat;
 }
 
 
-.radioBtn{
+.radio_button:nth-child(1):checked~.slide .slide_item {
+    transform: translateX(0%);
+}
+
+.radio_button:nth-child(2):checked~.slide .slide_item {
+    transform: translateX(-100%);
+}
+
+.radio_button:nth-child(3):checked~.slide .slide_item {
+    transform: translateX(-200%);
+}
+
+.radio_button:nth-child(4):checked~.slide .slide_item {
+    transform: translateX(-300%);
+}
+
+.radio_button:nth-child(5):checked~.slide .slide_item {
+    transform: translateX(-400%);
+}
+
+.radio_button:nth-child(6):checked~.slide .slide_item {
+    transform: translateX(-500%);
+}
+
+.radio_button:nth-child(7):checked~.slide .slide_item {
+    transform: translateX(-600%);
+}
+
+.radio_button:nth-child(8):checked~.slide .slide_item {
+    transform: translateX(-700%);
+}
+
+
+/* .radio-inputs {
     display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 600px;
+    font-size: 14px;
+    align-self: center;
+
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
     justify-content: center;
-}
-
-.radioBtn > input{
-    margin: 0 5px;
-}
-
-[id="select_box1"]:checked ~ li {transform: translateX(0%);}
-[id="select_box2"]:checked ~ li {transform: translateX(-100%);}
-[id="select_box3"]:checked ~ li {transform: translateX(-200%);}
-[id="select_box4"]:checked ~ li {transform: translateX(-300%);}
-[id="select_box5"]:checked ~ li {transform: translateX(-400%);}
-[id="select_box6"]:checked ~ li {transform: translateX(-500%);}
-[id="select_box7"]:checked ~ li {transform: translateX(-600%);}
-[id="select_box8"]:checked ~ li {transform: translateX(-700%);}
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  } */
