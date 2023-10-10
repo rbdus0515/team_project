@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: antiquewhite;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    /* border : 1px solid black; */
+}
+
+/* -------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.empty {
+    flex-basis: 15%;
+}
+
+#header-bar {
+    width: 100%;
+    height: 72px;
+    max-width: 1510px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    /* opacity: 0.5; 투명도 설정 */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#logo-weather {
+    flex-basis: 13%;
+    display: flex;
+    align-items: center;
+}
+
+#LAGCLogo {
+    height: 57px;
+    margin-inline: 5px;
+}
+
+#bar-empty {
+    flex-basis: 25%;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    width: 344px;
+}
+
+#input-search {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+
+#searchBtn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 7px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#search-img {
+    max-width: 20px;
+    height: auto;
+}
+
+#menu-Btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1; 
+    font-size: 20px;
+}
