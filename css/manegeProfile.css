@@ -82,33 +82,15 @@ label {
     flex-direction: column;
 }
 
-.duplicationCheck{
-    width: 5rem;
-    height: 3rem;
-    border: none;
-    border-radius: 15px;
-    margin: 5px 0 20px 0;
-    padding: 0 15px;
-    background-color: #e6e6e6;
-    cursor: pointer;
-}
-
-.duplicationCheck:hover{
-    background-color: #868686;
-    color: #fff;
-    transition-duration: 0.3s;
-}
-
 .confirm{ color : green; }
 .error{ color : red; }
 
-#pwMessage{
-    margin: 0;
-    padding: 0;
+.emailCheck {
+    display: flex;
 }
 
 .input{
-    width: 300px;
+    width: 20rem;
     height: 3rem;
     border: none;
     border-radius: 15px;
@@ -117,16 +99,16 @@ label {
     background-color: #e6e6e6;
 }
 
+
 .btn{
-    width: 150px;
-    height: 34px;
-    margin: 15px 0;
+    width: 7rem;
+    height: 3rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     background-color: #e6e6e6;
-    font-size: 16px;
-    margin: 0 5px;
+    font-size: 0.8rem;
+    margin: 5px;
 
     display: flex;
     justify-content: center;

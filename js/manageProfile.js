@@ -79,3 +79,12 @@ memberPwConfirm.addEventListener('input', ()=>{
 
     
 });
+
+const test = document.getElementById("test");
+
+test.addEventListener("click", () => {
+
+    "popup.html".style.display = 'block';
+    // window.open("popup.html");
+
+})

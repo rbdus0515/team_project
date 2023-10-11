@@ -48,28 +48,41 @@
                     <div>
                         <p>아이디</p>
                         <input class="input" type="text" name="id">
-                        <button type="button" class="duplicationCheck">중복확인</button>
+                        <div id="idMessage">5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.</div><br>
                     </div>
-
+                    
                     <div>
                         <p>비밀번호</p>
                         <input class="input" type="password" name="pw" id="memberPw">
                     </div>
-
+                    
                     <div>
                         <p>비밀번호 확인</p>
                         <input class="input" type="password" name="pwCheck" id="memberPwConfirm">
-                        <div id="pwMessage"></div><br>
+                        <div id="pwMessage">영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이만 사용 가능합니다.</div><br>
                     </div>
 
                     <div>
                         <p>이름</p>
                         <input class="input" type="text" name="name">
+                        <div id="nameMessage">한글만 작성 가능합니다.</div><br>
                     </div>
 
                     <div>
                         <p>이메일</p>
-                        <input class="input" type="email" name="email">
+                        <div class="emailCheck">
+                            <input class="input" type="email" name="email">
+                            <button id="sendAuthKeyEmail" type="button" class="btn">인증번호 받기</button>
+                        </div>
+                    </div>
+
+                    <div>
+                         <p>인증번호 입력</p>
+                         <div class="emailCheck">
+                             <input class="input" type="text" name="checkEmail">
+                             <button id="certifyBtnEmail" type="button" class="btn">인증하기</button>
+                         </div>
+                         <div id="emailMessage"></div><br>
                     </div>
 
                     <div>
@@ -80,7 +93,7 @@
                     <div>
                         <p>닉네임</p>
                         <input class="input" type="text" name="nickname">
-                        <button type="button" class="duplicationCheck">중복확인</button>
+                        <div id="nameMessage">영문, 한글만 작성 가능합니다.</div><br>
                     </div>
 
 
@@ -90,9 +103,6 @@
                     <button class="btn" type="submit">수정</button>
                     <button class="btn" type="button">회원 탈퇴</button>
                 </section>
-
-
-
 
             </div>
 
