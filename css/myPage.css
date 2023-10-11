@@ -1,0 +1,647 @@
+* {
+    box-sizing: border-box;
+    font-family: "Gowun Dodum";
+
+}
+
+/* body 크기 설정 */
+body {
+    margin: 0;
+    width: 100%;
+    height: 2573px;
+    background: #FFFFFF;
+}
+
+/* a태그 설정 */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* header 크기 설정 */
+header {
+    height: 10%;
+}
+
+/* main 크기 설정 */
+main {
+    height: 80%;
+}
+
+/* footer 크기 설정 */
+footer {
+    height: 10%;
+}
+
+/* 윗부분(프로필, 1대1 문의, 좋아요 목록, 작성한 댓글) 컨테이너 설정 */
+.top {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 프로필, 1대1 문의 컨테이너 설정 */
+.top-1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 프로필 컨테이너 설정 */
+.profile {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* 프로필 크기 설정 */
+.profile-box {
+    width: 631px;
+    height: 283px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+/* 프로필, 프로필 관리 버튼 컨테이너 설정 */
+.profile-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* 프로필 사진 */
+.profile-image {
+    width: 197px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* 프로필 관리 버튼 */
+.profile-button{
+    width: 181px;
+    height: 45px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* 프로필 관리 버튼 a 태그 설정 */
+.profile-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gowun Dodum";
+    text-decoration: none;
+    color: #000000;
+}
+
+/* 이름, 닉네임, 이메일 컨테이너 설정 */
+.profile-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* 이름, 닉네임 컨테이너 설정 */
+.profile-2-1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* 이름 컨테이너 설정 */
+.profile-2-1-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+/* 닉네임 컨테이너 설정 */
+.profile-2-1-nick {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+
+/* 이름 */
+.profile-n {
+    width: 60px;
+    height: 31px;
+
+    font-family: 'Gowun Dodum';
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/* 홍길동 */
+.profile-name {
+    width: 116px;
+    height: 60px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+
+}
+
+/* 닉네임 */
+.profile-n2 {
+    width: 80px;
+    height: 31px;
+
+    font-family: 'Gowun Dodum';
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* 춘식이 */
+.profile-nickname{
+    width: 116px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* 이메일 컨테이너 설정 */
+.profile-2-2-email {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 21px;
+}
+
+/* 이메일 */
+.profile-e {
+    width: 80px;
+    height: 31px;
+    font-family: 'Gowun Dodum';
+    font-size: 1.25rem;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* hong9@gmail.com */
+.profile-email {
+    width: 275px;
+    height: 60px;
+    font-family: 'Gowun Dodum';
+    font-size: 1.25rem;
+    line-height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* 1대1 문의 컨테이너 설정 */
+.inquiry {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1대1 문의 타이틀 설정*/
+.man-to-man-bar {
+    width: 157px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 1대1 문의 메인 설정 */
+.man-to-man {
+    width: 631px;
+    height: 221px;
+    left: 983px;
+    top: 260px;
+    display: flex;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 문의 날짜 */
+.mtm-date {
+    width: 15%;
+    height: 10%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 문의 제목 */
+.mtm-title {
+    width: 65%;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 문의 답변 상태 */
+.mtm-status {
+    width: 15%;
+    height: 10%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 좋아요 목록, 작성한 댓글 컨테이너 설정 */
+.top-2 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* 좋아요 목록 컨테이너 설정 */
+.like-list {
+    margin-right: 20px;
+}
+
+/* 좋아요 목록 제목 설정 */
+.like-list-title {
+    width: 161px;
+    height: 45px;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 좋아요 목록 내용 설정 */
+.like-list-main {
+    width: 631px;
+    height: 221px;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 왼쪽 화살표 설정 */
+.left-arrow {
+    width: 20%;
+    height: 15%;
+}
+
+/* 좋아요 목록 1번째 사진 */
+.like-list-1-photo {
+    width: 128px;
+    height: 148px;
+    margin: 15px;
+}
+
+/* 좋아요 목록 2번째 사진 */
+.like-list-2-photo {
+    width: 128px;
+    height: 148px;
+    margin: 15px;
+}
+
+/* 좋아요 목록 3번째 사진 */
+.like-list-3-photo {
+    width: 128px;
+    height: 148px;
+    margin: 15px;
+}
+
+/* 오른쪽 화살표 설정 */
+.right-arrow {
+    width: 20%;
+    height: 15%;
+}
+
+/* 작성한 댓글 제목 설정 */
+.comment-title {
+    width: 161px;
+    height: 45px;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 작성한 댓글 내용 설정 */
+.comment-main {
+    width: 631px;
+    height: 221px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 1번째 댓글 컨테이너 */
+.comment-1 {
+    display: flex;
+    width: 90%;
+    height: 15%;
+    align-items: center;
+    margin: 20px
+}
+
+/* 1번째 댓글 여행지 */
+.comment-1-title {
+    display: flex;
+    width: 30%;
+    margin-right: 20px;
+}
+
+/* 댓글 삭제 버튼 */
+.comment-delete {
+    display: flex;
+    justify-self: end;
+    margin-left: 10%;
+
+}
+
+/* 1번째 댓글 내용 */
+.comment-1-main {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* 2번째 댓글 컨테이너 */
+.comment-2 {
+    display: flex;
+    width: 90%;
+    height: 15%;
+    align-items: center;
+    margin: 20px
+}
+
+/* 2번째 댓글 여행지 */
+.comment-2-title {
+    display: flex;
+    width: 30%;
+    margin-right: 20px;
+}
+
+/* 2번째 댓글 내용 */
+.comment-2-main {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/* 댓글 더보기 화살표 버튼 */
+.down-arrow {
+    display: flex;
+    width: 5%;
+    height: 10%;
+    justify-self: end;
+    align-self: center;
+    position: relative;
+    top: 50px;
+ 
+}
+
+/* 아랫부분(나의 일정) 컨테이너 설정 */
+.under {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+/* 나의 일정 컨테이너 크기 설정 */
+.my-plan {
+    width: 1315px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 나의 일정 설정 */
+.my-plan-title {
+    width: 15%;
+    height: 10%;
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 나의 첫 번째 일정 */
+.my-plan-1 {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+/* 일정 여행지 이미지 */
+.my-plan img {
+    height: 80%;
+    display: flex;
+    margin: 40px;
+
+}
+
+/* 일정 내용 */
+.plan-main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 일정 제목 */
+.plan-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 일정까지 남은 시간 */
+.plan-D-day {
+    width: 65px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* 여행지 */
+.plan-area {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+/* 1번째 여행지 이름 */
+.plan-area-1-title {
+    margin-right: 15px;
+}
+
+
+/* 여행 기간 */
+.plan-date {
+    font-size: 1.25rem;
+}
+
+/* 편집 버튼 */
+.edit-button {
+    width: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 300px;
+
+}
+
+/* 공유 버튼 */
+.share-button {
+    width: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 300px;
+}
+
+/* 삭제 버튼 */
+.delete-button {
+    width: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: rgba(249, 140, 140, 1);
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    left: 300px;
+}
+
+/* 일정 추가 버튼 */
+.plan-add {
+    margin-left: 40%;
+    font-size: 1.5625rem;
+}
