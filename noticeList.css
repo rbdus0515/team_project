@@ -32,8 +32,13 @@ body > section {
 
 /* content(공지사항 내용) */
 #content {
-    flex-basis: 88%;
+    flex-basis: 77%;
     display: flex;
+}
+
+/* bottom(하단 공백 영역) */
+#bottom {
+    flex-basis: 10%;
 }
 
 /* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */

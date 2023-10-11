@@ -31,7 +31,7 @@ body {
 
 body > section {
     width: 100%;
-    height: 1500px;
+    height: 1760px;
     display: flex;
     flex-direction: column;
 }
@@ -57,6 +57,12 @@ body > section {
 #bottom {
     flex-basis: 75%;
     display: flex;
+}
+
+/* footer */
+#footer {
+    display: flex;
+    height: 300px;
 }
 
 #div1, #div3 {

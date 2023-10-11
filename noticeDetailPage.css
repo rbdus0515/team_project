@@ -24,20 +24,19 @@ body > section {
     height: 1800px;
 }
 
-/* 공지사항 대제목 */
+/* top(상단 공백 영역) */
 #top {
-    flex-basis: 17%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    font-size: 1.9rem;
-    font-weight: bold;
+    flex-basis: 9%;
 }
 
 #content {
     flex-basis: 83%;
     display: flex;
+}
+
+/* bottom(하단 공백 영역) */
+#bottom {
+    flex-basis: 8%;
 }
 
 /* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */
@@ -50,6 +49,16 @@ body > section {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
+}
+
+/* 공지사항 대제목 */
+#subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    font-size: 1.9rem;
+    font-weight: bold;
 }
 
 /* 공지사항 세부 내용 영역(위) */
@@ -70,12 +79,12 @@ body > section {
     flex-basis: 60%;
     background-color: #ddd;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin: 5px 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* 공지사항 세부 내용 영역(센터) */
@@ -118,7 +127,7 @@ body > section {
     border-radius: 10px;
     background-color: #ddd;
     font-size: 0.9rem; 
-    margin-bottom: 13px;
+    margin-bottom: 3px;
 }
 
 /* 이전 글 */

@@ -58,6 +58,12 @@ body > section {
     height: 1500px;
 }
 
+/* footer */
+#footer {
+    display: flex;
+    height: 300px;
+}
+
 #div1, #div3 {
     flex-basis: 20%;
 }
@@ -100,6 +106,13 @@ body > section {
     width: 220px;
     height: auto;
     border-radius: 10px;
+}
+
+/* 사진 호버시 효과 */
+.content-images:hover {
+    transform:scale(1.03);
+    transition: transform.5s;
+    opacity: 0.8;
 }
 
 .place-tit {
