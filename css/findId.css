@@ -1,3 +1,5 @@
+/********** 전체 화면 ******************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,92 +13,84 @@ body{
     height: 100vh;
 }
 
+
+/********** 홈 로고 ******************************************************/
 #homelogo{
     width: 47px;
     height: 57px;
     margin: 20px;
 }
 
-hr{
-    width: 25em;
-    margin: 1.5em 0;
-    border: 0.1px solid #bebebe;
-    
-}
+
+/********** 메인 화면 ******************************************************/
 
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .findIdTitle{
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.contentContainer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1em;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .findIdContainer{
     display: flex;
     flex-direction: column;
     background-color: #e6e6e6;
-    padding: 2em;
+    padding: 2rem;
     border-radius: 10px;
 }
 
-.contentContainer > input{
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.contentContainer input{
     border: none;
-    width: 20em;
-    height: 2em;
+    width: 20rem;
+    height: 2rem;
     border-radius: 10px;
-    padding: 1em;
+    padding: 1rem;
     
-    margin: 0.3em 0;
+    margin: 0.3rem 0;
 }
 
-.contentContainer > div > input{
-    border: none;
-    width: 20em;
-    height: 2em;
-    border-radius: 10px;
-    padding: 1em;
-    
-    margin: 0.3em 0;
-}
-
-#certifyBtn{
+.certifyBtn{
     border: none;
     background-color: #fff;
-    padding: 0.3em 1em;
+    padding: 0.3rem 1rem;
     border-radius: 10px;
     cursor: pointer;
 }
 
-#certifyBtn:hover{
+.certifyBtn:hover{
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
 }
 
+.findIdRadio{
+    margin-bottom: 1rem;
+}
 
-.findIdContainer > div > label> input{
-    margin-bottom: 1em;
+hr{
+    width: 25rem;
+    margin: 1.5rem 0;
+    border: 0.1px solid #bebebe;
 }
 
 #submitBtn{
-    width: 10em;
+    width: 10rem;
     background-color: #fff;
 
     border: none;
-    padding: 0.5em 2em;
+    padding: 0.5rem 2rem;
     border-radius: 10px;
-    margin-top: 1em;
+    margin-top: 1rem;
     cursor: pointer;
 
     align-self: center;

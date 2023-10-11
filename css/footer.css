@@ -1,3 +1,5 @@
+/********** 전체 화면 ******************************************************/
+
 *{
     margin: 0;
     font-family: Gowun Dodum;
@@ -7,12 +9,15 @@
 
 footer{
     width: 100vw;
-    height: 92px;
+    height: 5.5rem;
 
     background-color: #e5e5e5;
     
     display: flex;
+    position: fixed;
+    bottom: 0;
 }
+/********** 로고 ******************************************************/
 
 .logoSection{
     flex-basis: 2%;
@@ -26,6 +31,8 @@ footer{
     height: 57px;
 }
 
+/********** 저작권 ******************************************************/
+
 .copyright{
     flex-basis: 18%;
 
@@ -35,6 +42,8 @@ footer{
     margin-bottom: 15px;
     font-size: 15px;
 }
+
+/********** 푸터 내용 ******************************************************/
 
 .footerInformation{
     flex-basis: 80%;

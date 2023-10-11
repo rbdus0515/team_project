@@ -1,9 +1,11 @@
-.mainContainer{
+/********** 전체 화면 ******************************************************/
+.mainContainer {
     width: 50rem;
     display: flex;
     flex-direction: column;
 }
 
+/********** X 버튼 ******************************************************/
 #closeBtn {
     background-color: transparent;
     border: none;
@@ -12,10 +14,11 @@
     align-self: flex-end;
 }
 
-#closeBtn>img {
+#closeBtn > img {
     width: 1rem;
 }
 
+/********** 메인 화면 ******************************************************/
 .wrap {
     position: relative;
 
@@ -25,7 +28,7 @@
     flex-direction: column;
 }
 
-input{
+input {
     display: none;
 }
 
@@ -49,11 +52,7 @@ input{
     width: 50rem;
 }
 
-.radio_button {
-    margin: 0;
-}
-
-.slide_item label {
+.left, .right {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -63,12 +62,12 @@ input{
 
 .left {
     left: 0%;
-    background: url('/team_project/images/left.png') center center / 20% no-repeat;
+    background: url('/team_project/images/left.png') center center / 30% no-repeat;
 }
 
 .right {
     right: 0%;
-    background: url('/team_project/images/right.png') center center / 20% no-repeat;
+    background: url('/team_project/images/right.png') center center / 30% no-repeat;
 }
 
 
@@ -104,42 +103,3 @@ input{
     transform: translateX(-700%);
 }
 
-
-/* .radio-inputs {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 0.5rem;
-    background-color: #EEE;
-    box-sizing: border-box;
-    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-    padding: 0.25rem;
-    width: 600px;
-    font-size: 14px;
-    align-self: center;
-
-  }
-  
-  .radio-inputs .radio {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-  
-  .radio-inputs .radio input {
-    display: none;
-  }
-  
-  .radio-inputs .radio .name {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .5rem 0;
-    transition: all .15s ease-in-out;
-  }
-  
-  .radio-inputs .radio input:checked + .name {
-    background-color: #fff;
-    font-weight: 600;
-  } */

@@ -1,3 +1,4 @@
+/********** 전체 화면 ******************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@
   border-radius: 10px;
 }
 
+/********** X버튼 ******************************************************/
 #closeBtn {
   background-color: transparent;
   border: none;
@@ -26,6 +28,7 @@
   width: 1rem;
 }
 
+/********** 사진  ******************************************************/
 .container {
   display: flex;
   justify-content: space-around;
@@ -56,14 +59,11 @@
   margin: 10px 0;
 }
 
-.explainSection {
-  flex-basis: 50%;
-}
 
 .popupFooter {
   width: 80%;
   display: flex;
-
+  
   justify-content: space-around;
   margin: 20px 0;
 }
@@ -73,7 +73,10 @@
   text-decoration: none;
 }
 
+/********** 설명, 후기  ******************************************************/
+
 .explainSection {
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +139,7 @@
   border-radius: 10px;
 }
 
-.comment > p{
+.comment > p {
   font-size: 0.8rem;
 }
 
@@ -173,7 +176,6 @@
   color: #fff;
   transition-duration: 0.3s;
 }
-
 
 
 /* -------------------- 하트 이미지 css ------------------------------------*/

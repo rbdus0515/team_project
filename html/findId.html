@@ -11,10 +11,12 @@
 
 <body>
 
+<!-- 홈 로고 --------------------------------------------------------------------------------------->
     <a href="#">
         <img id="homelogo" class="logo" src="/team_project/images/logo.png" alt="">
     </a>
 
+<!-- 메인 화면 ------------------------------------------------------------------------------------->
     <main>
 
         <p class="findIdTitle">아이디 찾기</p>
@@ -25,9 +27,9 @@
                 
                 <div>
 
+                        <input type="radio" name="wayToFindId" class="findIdRadio" id="findIdByPhone" value="checkByPhone" checked> 
                         <label for="findIdByPhone">
-                            <input type="radio" name="wayToFindId" id="findIdByPhone"> 
-                            등록된 휴대전화로 인증하기
+                            휴대전화로 인증하기
                         </label>
                         
                         <div class="contentContainer">
@@ -38,12 +40,16 @@
                             <div>
                                 <p>전화번호</p>
                                 <input type="tel" name="phone" placeholder="'-' 제외">
-                                <button type="button" id="certifyBtn">인증번호 받기</button>
+                                <button id="sendAuthKeyPhone" type="button" class="certifyBtn">인증번호 받기</button>
                             </div>
                             
-                            <p>인증번호</p>
-                            <input type="text" name="" >
-                            
+                            <div>
+                                <p>인증번호 입력</p>
+                                <input type="text" name="checkPhone">
+                                <button id="certifyBtnPhone" type="button" class="certifyBtn">인증하기</button>
+                            </div>
+
+                            <span id="checkAuthKeyByPhone"></span>
                         </div>
                         
                     </div>
@@ -51,8 +57,8 @@
                     <hr>
                     
                     <div>
+                        <input type="radio" name="wayToFindId" class="findIdRadio" id="findIdByEmail" value="checkByEmail">
                         <label for="findIdByEmail">
-                            <input type="radio" name="wayToFindId" id="findIdByEmail">
                             이메일로 인증하기
                         </label>
                         
@@ -61,25 +67,25 @@
                             <p>이름</p>
                             <input type="text" name="name">
                             
-                            <p>이메일</p>
-                            <input type="tel" name="phone">
-                            
-                            <p>인증번호</p>
-                            <input type="text" name="" >
+                            <div>
+                                <p>이메일</p>
+                                <input type="email" name="phone">
+                                <button id="sendAuthKeyEmail" type="button" class="certifyBtn">인증번호 받기</button>
+                            </div>
+
+                            <div>
+                                <p>인증번호 입력</p>
+                                <input type="text" name="checkEmail">
+                                <button id="certifyBtnEmail" type="button" class="certifyBtn">인증하기</button>
+                            </div>
+
+                            <span id="checkAuthKeyByEmail"></span>
                             
                         </div>
                         
                     </div>
                     
                 <hr>    
-                
-                <!-- <div>
-                    <label for="findIdByIpin">
-                        <input type="radio" name="wayToFindId" id="findIdByIpin">
-                        아이핀으로 인증하기
-                    </label>
-                    
-                </div> -->
                 
                 <button id="submitBtn">아이디 찾기</button>
                 

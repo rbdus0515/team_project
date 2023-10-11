@@ -1,41 +1,81 @@
-function loadFile(input) {
-    var file = input.files[0];	//선택된 파일 가져오기
+/*********** 비밀번호 검사 *************************************/ 
+// checkObj 추가 해야함!!!!
 
-    //미리 만들어 놓은 div에 text(파일 이름) 추가
-    var name = document.getElementById('fileName');
-    name.textContent = file.name;
+const memberPw = document.getElementById("memberPw");
+const memberPwConfirm = document.getElementById("memberPwConfirm");
+const pwMessage = document.getElementById("pwMessage");
 
-  	//새로운 이미지 div 추가
-    var newImage = document.createElement("img");
-    newImage.setAttribute("class", 'img');
+// 비밀번호 입력 시 유효성 검사
+memberPw.addEventListener("input", () => {
 
-    //이미지 source 가져오기
-    newImage.src = URL.createObjectURL(file);   
+    // 비밀번호가 입력되지 않은 경우
+    if(memberPw.value.trim().length == 0){
+        memberPw.value = ""; // 띄어쓰지 못넣게 하기
 
-    newImage.style.width = "70%";
-    newImage.style.height = "70%";
-    newImage.style.visibility = "hidden";   //버튼을 누르기 전까지는 이미지를 숨긴다
-    newImage.style.objectFit = "contain";
+        pwMessage.innerText = "영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이로 입력해주세요.";
+        pwMessage.classList.remove("confirm", "error"); // 검정 글씨
 
-    //이미지를 image-show div에 추가
-    var container = document.getElementById('image-show');
-    container.appendChild(newImage);
-};
+        return;
+    }
 
 
-const test = document.getElementById("test");
-const testClose = document.getElementById("closeBtn")
-let popup;
+    // 정규 표현식을 이용한 비밀번호 유효성 검사
 
-test.addEventListener("click", () => {
+    // 영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이
+    const regEx = /^[a-zA-Z0-9\!\@\#\-\_]{6,20}$/;
 
-  popup = window.open("popup.html", "a", "width=800, height=525"); 
+    // 입력한 비밀번호가 유효한 경우
+    if(regEx.test(memberPw.value)){
+        
+        // 비밀번호가 유효하게 작성된 상태에서
+        // 비밀번호 확인이 입력되지 않았을 때
+        if(memberPwConfirm.value.trim().length == 0){
 
+            pwMessage.innerText = "유효한 비밀번호 형식입니다";
+            pwMessage.classList.add("confirm");
+            pwMessage.classList.remove("error");
+        
+        }else{
+            // 비밀번호가 유효하게 작성된 상태에서
+            // 비밀번호 확인이 입력되어 있을 때
 
+            // 비밀번호 == 비밀번호 확인  (같을 경우)
+            if(memberPw.value == memberPwConfirm.value){
+                pwMessage.innerText = "비밀번호가 일치합니다";
+                pwMessage.classList.add("confirm");
+                pwMessage.classList.remove("error");
+                
+            } else{ // 다를 경우
+                pwMessage.innerText = "비밀번호가 일치하지 않습니다";
+                pwMessage.classList.add("error");
+                pwMessage.classList.remove("confirm");
+            }
+        }
+
+        
+    } else{ // 유효하지 않은 경우
+        
+        pwMessage.innerText = "비밀번호 형식이 유효하지 않습니다";
+        pwMessage.classList.add("error");
+        pwMessage.classList.remove("confirm");
+    }
 });
 
-testClose.addEventListener("click", () => {
-  
-  popup.close();
 
-})
+// 비밀번호 확인 유효성 검사
+memberPwConfirm.addEventListener('input', ()=>{
+
+          // 비밀번호 == 비밀번호 확인  (같을 경우)
+        if(memberPw.value == memberPwConfirm.value){
+            pwMessage.innerText = "비밀번호가 일치합니다";
+            pwMessage.classList.add("confirm");
+            pwMessage.classList.remove("error");
+            
+        } else{ // 다를 경우
+            pwMessage.innerText = "비밀번호가 일치하지 않습니다";
+            pwMessage.classList.add("error");
+            pwMessage.classList.remove("confirm");
+        }
+
+    
+});

@@ -1,23 +1,9 @@
-/* 글꼴 모음 */
-@font-face {
-    font-family: 'GowunDodum-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* 전체 */
+/********** 전체 화면 ******************************************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'GowunDodum-Regular';
-}
-
-/* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */
-#l_blank,
-#r_blank {
-    flex-basis: 20%;
+    font-family: Gowun Dodum;
 }
 
 body>section {
@@ -27,7 +13,14 @@ body>section {
     height: 1800px;
 }
 
-/* 공지사항 대제목 */
+/* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */
+#l_blank,
+#r_blank {
+    flex-basis: 20%;
+}
+
+
+/********** 제목 ******************************************************/
 .topTitle {
     flex-basis: 10%;
     display: flex;
@@ -38,18 +31,20 @@ body>section {
     margin-top: 50px;
 }
 
+
+/********** 메인 ******************************************************/
 .content {
     flex-basis: 90%;
     display: flex;
 }
 
-
-/* main(공지사항 세부 내용 영역) */
 #main {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
 }
+
+/********** 문의 분류 ******************************************************/
 
 .askBtn {
     border: none;
@@ -66,11 +61,10 @@ body>section {
     transition-duration: 0.3s;
 }
 
-
+/********** 콘텐츠 ******************************************************/
 .askContent {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     justify-content: space-between;
 }
 
@@ -81,7 +75,7 @@ body>section {
     margin-top: 80px;
 }
 
-.askDetail>div {
+.askDetail > div {
     display: flex;
 }
 
@@ -129,7 +123,7 @@ body>section {
     flex-direction: column;
 }
 
-.answer > p{
+.answer > p {
     width: 9rem;
     display: flex;
     justify-content: center;
@@ -137,7 +131,6 @@ body>section {
     border-radius: 10px;
     margin: 10px 0 5px 0;
     padding: 2px;
-
 }
 
 .answerArea{
@@ -163,6 +156,8 @@ body>section {
     color: #fff;
     transition-duration: 0.3s;
 }
+
+/********** 반응형 ******************************************************/
 
 @media all and (max-width:767px) {
 

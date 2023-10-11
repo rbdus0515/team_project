@@ -1,3 +1,5 @@
+/********** 전체 화면 ******************************************************/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,17 +8,20 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/********** 홈 로고 ******************************************************/
 #homelogo{
     width: 47px;
     height: 57px;
     margin: 20px;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
+/********** 프로필 사진 ******************************************************/
 .profileContainer{
     display: flex;
     flex-direction: column;
@@ -53,6 +58,8 @@ label {
     visibility: hidden;
 }
 
+
+/********** 정보 입력 ******************************************************/
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -90,6 +97,14 @@ label {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+}
+
+.confirm{ color : green; }
+.error{ color : red; }
+
+#pwMessage{
+    margin: 0;
+    padding: 0;
 }
 
 .input{

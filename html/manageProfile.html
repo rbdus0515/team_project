@@ -11,17 +11,19 @@
 
 <body>
 
+<!-- 홈 로고 ---------------------------------------------------------------------------------------->
     <a href="#">
         <img id="homelogo" class="logo" src="/team_project/images/logo.png" alt="">
     </a>
 
+<!-- 메인 ---------------------------------------------------------------------------------------->    
     <main class="mainContainer">
-
 
         <form action="#" method="post">
 
 
-            
+<!--프로필 사진 ---------------------------------------------------------------------------------------->    
+
             <div class="profileContainer">
 
                 <div class="imgContainer">
@@ -39,7 +41,7 @@
 
                 </div>
 
-
+<!-- 정보 입력 ---------------------------------------------------------------------------------------->    
 
                 <section class="myInfo">
 
@@ -51,12 +53,13 @@
 
                     <div>
                         <p>비밀번호</p>
-                        <input class="input" type="password" name="pw">
+                        <input class="input" type="password" name="pw" id="memberPw">
                     </div>
 
                     <div>
                         <p>비밀번호 확인</p>
-                        <input class="input" type="password" name="pwCheck">
+                        <input class="input" type="password" name="pwCheck" id="memberPwConfirm">
+                        <div id="pwMessage"></div><br>
                     </div>
 
                     <div>
@@ -66,17 +69,17 @@
 
                     <div>
                         <p>이메일</p>
-                        <input class="input" type="email" name="name">
+                        <input class="input" type="email" name="email">
                     </div>
 
                     <div>
                         <p>전화번호</p>
-                        <input class="input" type="tel" name="name" placeholder="- 제외">
+                        <input class="input" type="tel" name="phoneNo" placeholder="- 제외">
                     </div>
 
                     <div>
                         <p>닉네임</p>
-                        <input class="input" type="text" name="name">
+                        <input class="input" type="text" name="nickname">
                         <button type="button" class="duplicationCheck">중복확인</button>
                     </div>
 
