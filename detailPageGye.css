@@ -24,11 +24,6 @@ html {
     font-family: 'GowunDodum-Regular';
 }
 
-/* 섹션 나누는 줄 */
-/* div, section {
-    border: 1px solid black;
-} */
-
 body {
     margin: 0px;
     padding: 0px;
@@ -45,7 +40,7 @@ body > section {
 #top {
     font-family: 'Arita-buri-SemiBold';
     flex-basis: 25%;
-    background-image: url("images/GAN/강원메인이미지.png");
+    background-image: url("images/GYE/경상메인이미지.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,10 +48,7 @@ body > section {
     height: auto;
     line-height: 300px;
     font-size: 4rem;
-    padding-left: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 1300px;
 }
 
 /* bottom */
@@ -98,7 +90,6 @@ body > section {
 .blank {
     flex-basis: 30%;
 }
-
 .place-img {
     flex-basis: 50%;
 }
@@ -159,4 +150,3 @@ body > section {
 /* #row-plus {
     display: none;
 } */
-

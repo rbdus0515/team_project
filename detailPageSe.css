@@ -24,11 +24,6 @@ html {
     font-family: 'GowunDodum-Regular';
 }
 
-/* 섹션 나누는 줄 */
-/* div, section {
-    border: 1px solid black;
-} */
-
 body {
     margin: 0px;
     padding: 0px;
@@ -36,7 +31,6 @@ body {
 
 body > section {
     width: 100%;
-    height: 1500px;
     display: flex;
     flex-direction: column;
 }
@@ -44,22 +38,24 @@ body > section {
 /* top */
 #top {
     font-family: 'Arita-buri-SemiBold';
-    flex-basis: 25%;
-    background-image: url("images/JEJ/제주메인이미지.png");
+    /* flex-basis: 25%; */
+    background-image: url("images/SEO/서울메인이미지.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: auto;
-    line-height: 200px;
+    line-height: 375px;
     font-size: 4rem;
-    padding-left: 1100px;
+    padding-left: 100px;
 }
 
 /* bottom */
 #bottom {
-    flex-basis: 75%;
+    /* flex-basis: 75%; */
+    /* height: auto; */
     display: flex;
+    height: 1500px;
 }
 
 #div1, #div3 {
@@ -80,7 +76,7 @@ body > section {
 
 /* bottom: images */
 .row {
-    flex-basis: calc(100%/3);
+    flex-basis: calc(100%/4);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
