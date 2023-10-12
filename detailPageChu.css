@@ -105,10 +105,31 @@ body > section {
     width: 220px;
     height: auto;
     border-radius: 10px;
+
+    transition: 0.3s ease-in-out;
 }
 
-.place-tit {
+/* 사진 호버시 효과 */
+.content-images:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+/* 장소이름 영역 */
+.place-tit-sec {
     flex-basis: 20%;
+    display: flex;
+}
+
+/* 장소이름 */
+.tit {
+    flex-basis: 70%;
+}
+
+/* X 버튼 영역 */
+.x-btn-sec {
+    flex-basis: 30%;
 }
 
 /* bottom: up-btn */
@@ -152,8 +173,23 @@ body > section {
     cursor: pointer;
     background-color: darkgray;
     color: white;
-}
+}ㄴ
 
 /* #row-plus {
     display: none;
 } */
+
+/* X 버튼 */
+.x-btn {
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+}
+
+.x-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: white;
+}
