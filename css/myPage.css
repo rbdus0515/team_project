@@ -18,9 +18,11 @@ a {
     color: black;
 }
 
+/* 버튼 설정 */
 button {
     border: none;
     cursor: pointer;
+    background: rgba(0, 0, 0, 0);
 }
 
 /* header 크기 설정 */
@@ -350,7 +352,7 @@ footer {
     width: 631px;
     height: 221px;
     display: flex;
-    justify-content:first baseline;
+    justify-content:space-around;
     align-items: center;
     text-align: center;
 
@@ -358,37 +360,32 @@ footer {
     border-radius: 10px;
 }
 
+.arrow-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+}
+
 /* 왼쪽 화살표 설정 */
 .left-arrow {
-    width: 20%;
-    height: 15%;
+    width: 30px;
+    height: 30px;
 }
 
 /* 좋아요 목록 1번째 사진 */
-.like-list-1-photo {
+.like-list-photo {
     width: 128px;
     height: 148px;
     margin: 15px;
-}
-
-/* 좋아요 목록 2번째 사진 */
-.like-list-2-photo {
-    width: 128px;
-    height: 148px;
-    margin: 15px;
-}
-
-/* 좋아요 목록 3번째 사진 */
-.like-list-3-photo {
-    width: 128px;
-    height: 148px;
-    margin: 15px;
+    margin-bottom: 5px;
 }
 
 /* 오른쪽 화살표 설정 */
 .right-arrow {
-    width: 20%;
-    height: 15%;
+    width: 30px;
+    height: 30px;
 }
 
 /* 작성한 댓글 제목 설정 */
@@ -413,13 +410,13 @@ footer {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow:scroll
 }
 
-/* 1번째 댓글 컨테이너 */
-.comment-1 {
+/* 댓글 컨테이너 */
+.comment {
     display: flex;
     width: 90%;
     height: 15%;
@@ -427,23 +424,30 @@ footer {
     margin: 20px
 }
 
-/* 1번째 댓글 여행지 */
-.comment-1-title {
+/* 댓글 여행지 */
+.comment-loca {
     display: flex;
     width: 30%;
+    align-items: center;
     margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    width: 94%;
 }
 
 /* 댓글 삭제 버튼 */
 .comment-delete {
     display: flex;
-    justify-self: end;
-    margin-left: 10%;
-
+    justify-self: center;
+    align-self: center;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0);
 }
 
 /* 1번째 댓글 내용 */
-.comment-1-main {
+.comment-content {
     display: flex;
     width: 70%;
     height: 100%;
@@ -453,44 +457,6 @@ footer {
     padding-left: 10px;
 }
 
-/* 2번째 댓글 컨테이너 */
-.comment-2 {
-    display: flex;
-    width: 90%;
-    height: 15%;
-    align-items: center;
-    margin: 20px
-}
-
-/* 2번째 댓글 여행지 */
-.comment-2-title {
-    display: flex;
-    width: 30%;
-    margin-right: 20px;
-}
-
-/* 2번째 댓글 내용 */
-.comment-2-main {
-    display: flex;
-    width: 70%;
-    height: 100%;
-    background-color: white;
-    border-radius: 10px;
-    align-items: center;
-    padding-left: 10px;
-}
-
-/* 댓글 더보기 화살표 버튼 */
-.down-arrow {
-    display: flex;
-    width: 5%;
-    height: 10%;
-    justify-self: end;
-    align-self: center;
-    position: relative;
-    top: 50px;
- 
-}
 
 /* 아랫부분(나의 일정) 컨테이너 설정 */
 .under {
@@ -537,8 +503,8 @@ footer {
 
 
 /* 일정 여행지 이미지 */
-.my-plan img {
-    height: 80%;
+.my-plan-img {
+    height: 15.625Rem;
     display: flex;
     margin: 40px;
 
@@ -589,23 +555,6 @@ footer {
     font-size: 1.25rem;
 }
 
-/* 편집 버튼 */
-.edit-button {
-    width: 5%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-
-    background: rgba(0, 0, 0, 0.1);
-    border: 0;
-    border-radius: 10px;
-    position: relative;
-    top: 120px;
-    left: 300px;
-
-}
 
 /* 공유 버튼 */
 .share-button {
