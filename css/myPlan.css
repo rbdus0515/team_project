@@ -39,7 +39,7 @@ button {
 
 /* 여행지와 여행 계획 크기 설정 */
 .left-side {
-    width: 70%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -52,11 +52,18 @@ button {
 }
 
 /* 로고와 검색창 위치 설정 */
+.logo-box {
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+
 .search-box {
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 50%;
     height: 20%;
 }
 
@@ -67,21 +74,22 @@ button {
     margin: 20px;
     margin-right: 0px;
     display: flex;
+
 }
 
-.search-box > input {
-    display: flex;
+.search-box input {
     padding-left: 10px;
+    align-items: center;
 }
 
 /* 검색창 크기 설정 */
 .search {
-    width: 70%;
+    width: 400px;
     height: 40px;
     border-radius: 50px;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-items: center;
+    margin: 25px;
     background-image:url(/images/search-icon.png);
     background-repeat: no-repeat;
     background-position: 98% center;
