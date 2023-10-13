@@ -103,6 +103,14 @@ body > section {
     color: gray;
 }
 
+#left-btn:hover {
+    cursor: pointer;
+}
+
+#right-btn:hover {
+    cursor: pointer;
+}
+
 
 
 

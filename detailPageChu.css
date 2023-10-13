@@ -24,6 +24,10 @@ html {
     font-family: 'GowunDodum-Regular';
 }
 
+div, section {
+    border: 1px solid black;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -173,7 +177,7 @@ body > section {
     cursor: pointer;
     background-color: darkgray;
     color: white;
-}ㄴ
+}
 
 /* #row-plus {
     display: none;
