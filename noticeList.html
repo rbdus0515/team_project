@@ -8,11 +8,47 @@
     <link rel="stylesheet" href="noticeList.css">
 
     <script src="https://kit.fontawesome.com/f821b57119.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/showModalDialog.js" ></script>
+    <script type="text/javascript" src="js/showModalDialogCallee.js" ></script>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        });
+
+        
+        function noticePop()
+        {
+            let obj = {}
+            obj.value1 = "111";    
+            obj.value1 = 2;
+
+            let openParam = "dialogWidth=1000px;  scroll=no; status=yes; help=no; center=yes";
+
+            retVal = window.showModalDialog("noticeDetailPage.html", obj, openParam);
+
+            if (retVal) {
+                // if(fn_egov_NormalCalendar.arguments.length == 2){
+                //     sDate.value = retVal.vDate;
+                // }else{
+                //     sDate.value = retVal.sDate;
+                //     vDate.value = retVal.vDate;
+                // }
+            }
+        }
+    </script>
 </head>
 <body>
     <section>
         <!-- top -->
-        <div id="top"></div>
+        <div id="top" w3-include-html="header.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
 
         <!-- content -->
         <div id="content">
@@ -24,7 +60,7 @@
                 <div id="m_tit">공지사항</div>
                 <div><hr></div>
 
-                <div class="m_cont">
+                <div class="m_cont" onclick="noticePop()">
                     <div class="m_cont_tit">9/27(수) 홈페이지 개편 안내</div>
                     <div class="m_cont_dt">2023.09.27</div>
                 </div>
