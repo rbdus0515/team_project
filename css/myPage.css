@@ -16,19 +16,19 @@
     display: none;
 
     background-color: rgba(0, 0, 0, 0.4);
-  }
+}
 
-  .modal.show {
+.modal.show {
     display: block;
-  }
+}
 
-  .modal_body {
+.modal_body {
     position: absolute;
     top: 50%;
     left: 50%;
 
     width: 550px;
-    height: 400px;
+    height: 300px;
 
     padding: 40px;
 
@@ -39,7 +39,33 @@
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
 
     transform: translateX(-50%) translateY(-50%);
-  }
+}
+
+.modalBodyTitle {
+    font-size: 1.25rem;
+}
+
+.modalBodyIcon {
+    display: flex;
+    justify-content: baseline;
+}
+
+.icon > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+
+.icon > a > img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
 
 /* body 크기 설정 */
 body {
@@ -392,6 +418,8 @@ footer {
     justify-content:space-around;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+    
 
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -409,6 +437,11 @@ footer {
 .left-arrow {
     width: 30px;
     height: 30px;
+}
+
+.like-list-combo {
+    display: flex;
+    flex-direction: row;
 }
 
 /* 좋아요 목록 1번째 사진 */

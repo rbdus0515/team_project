@@ -147,9 +147,10 @@ button {
 
 /* 펼치기 버튼 설정 */
 .펼치기 {
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-size: 3rem;
 }
 
 /* 여행 계획 제목 */
@@ -192,9 +193,19 @@ button {
     margin: 15px;
 }
 
+.cansle-button {
+    width: 50px;
+    height: 187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+}
+
 /* 선택한 여행지 이미지 설정 */
 .선택한-여행지-이미지 {
-    width: 50%;
+    width: 165px;
     height: 187px;
 }
 
