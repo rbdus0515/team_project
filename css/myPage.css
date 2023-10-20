@@ -41,13 +41,32 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+.modal_body2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 550px;
+    height: 300px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
+}
+
 .modalBodyTitle {
     font-size: 1.25rem;
 }
 
 .modalBodyIcon {
     display: flex;
-    justify-content: baseline;
+    justify-content: space-around;
 }
 
 .icon > a {
@@ -71,7 +90,7 @@
 body {
     margin: 0;
     width: 100%;
-    height: 2573px;
+    height: 100%;
     background: #FFFFFF;
 }
 
@@ -425,6 +444,7 @@ footer {
     border-radius: 10px;
 }
 
+/* 전체 화살표 설정 */
 .arrow-button {
     width: 30px;
     height: 30px;
@@ -482,7 +502,6 @@ footer {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow:scroll
 }
 
 /* 댓글 컨테이너 */
@@ -557,6 +576,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 /* 나의 첫 번째 일정 */
@@ -582,6 +602,7 @@ footer {
 
 /* 일정 내용 */
 .plan-main {
+    width: 60%;
     display: flex;
     flex-direction: column;
 
@@ -615,7 +636,7 @@ footer {
 }
 
 /* 1번째 여행지 이름 */
-.plan-area-1-title {
+.plan-area-title {
     margin-right: 15px;
 }
 
@@ -625,11 +646,18 @@ footer {
     font-size: 1.25rem;
 }
 
+/* 공유/삭제 버튼 컨테이너 */
+.share-delete {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
 
 /* 공유 버튼 */
 .share-button {
-    width: 5%;
-    height: 10%;
+    width: 50px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -638,29 +666,28 @@ footer {
     background: rgba(0, 0, 0, 0.1);
     border: 0;
     border-radius: 10px;
-    position: relative;
-    top: 120px;
-    left: 300px;
+
 }
 
 /* 삭제 버튼 */
 .delete-button {
-    width: 5%;
-    height: 10%;
+    width: 50px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
+    margin-right: 20px;
     background: rgba(249, 140, 140, 1);
     border: 0;
     border-radius: 10px;
-    position: relative;
-    top: 120px;
-    left: 300px;
+
 }
 
 /* 일정 추가 버튼 */
 .plan-add {
+    height: 300px;
     margin-left: 40%;
     font-size: 1.5625rem;
+    cursor:auto;
 }

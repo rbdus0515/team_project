@@ -28,12 +28,7 @@ button {
     margin: 0;
     width: 100%;
     height: 100%;
-}
-
-/* left-side와 맵 컨테이너 설정 */
-.map-api {
     display: flex;
-    
 }
 
 
@@ -44,6 +39,7 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 
 .search-conteiner {
     width: 100%;
@@ -251,32 +247,68 @@ button {
     align-self: flex-end;
 }
 
+.storage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 25px;
+    height: 50px;
+    border-radius: 5px;
+    border-top-left-radius:00px;
+    border-bottom-left-radius:00px;
+}
+
+.left-arrow {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
 /* 이용방벙 버튼 크기, 위치 설정*/
 .이용방법 {
     position: absolute;
-    top: 11px;
+    top: 20px;
     right: 100px;
     z-index: 10;
     width: 80px;
     padding: 1px 3px 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
 
+.이용방법 > a {
+    color: black;
+}
+
 /* 로그인 버튼 크기, 위치 설정*/
 .log-in {
     position: absolute;
-    top: 11px;
+    top: 5px;
     right: 9px;
     z-index: 10;
-    width: 69px;
+    width: 75px;
+    height: 75px;
     padding: 1px 3px 5px;
-    background: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+}
+
+.map-profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
