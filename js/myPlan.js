@@ -1,3 +1,4 @@
+/* 카카오맵 설정 */ 
 window.onload = function(){
 var container = document.getElementById('map');
 var options = {
@@ -8,3 +9,5 @@ var options = {
 var map = new kakao.maps.Map(container, options);
 
 };
+
+/* 펼치기 */
