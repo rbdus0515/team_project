@@ -50,6 +50,7 @@ const share = document.getElementsByClassName('share-button');
   const moveSlide = function(num){
     slideBox.style.transform = `translateX(${-num * 475}px)`;
     currentIndex = num;
+    
 }
 
 prev.addEventListener('click', ()=>{

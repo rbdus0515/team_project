@@ -10,4 +10,13 @@ var map = new kakao.maps.Map(container, options);
 
 };
 
-/* 펼치기 */
+/* 선택한 여행지 div 숨기기 */
+const hidden = document.querySelector('.storage');
+const plan = document.querySelector('.left-side');
+
+hidden.addEventListener('click', () => {
+
+    plan.style.display = "none";
+
+});
+
