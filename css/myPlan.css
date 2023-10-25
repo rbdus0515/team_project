@@ -34,16 +34,21 @@ button {
 
 /* 여행지와 여행 계획 크기 설정 */
 .left-side {
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+.right-side {
+    width: 30%;
+    height: 100%;
+}
+
 
 .search-conteiner {
     width: 100%;
-    height: 20%;
+    height: 100px;
     display: flex;
 }
 
@@ -53,14 +58,13 @@ button {
     justify-content:baseline;
     align-items: center;
     width: 20%;
-    height: 20%;
 }
 
 .search-box {
     display: flex;
     justify-content: center;
-    width: 50%;
-    height: 20%;
+    align-items: center;
+    width: 80%;
 }
 
 /* 로고 크기 설정 */
@@ -80,7 +84,7 @@ button {
 
 /* 검색창 크기 설정 */
 .search {
-    width: 400px;
+    width: 100%;
     height: 40px;
     border-radius: 50px;
     display: flex;
@@ -92,29 +96,34 @@ button {
     
 }
 
-.loca-plan {
-    display: flex;
-
-
-}
-
 /* 여행지 크기 설정 */
 .location {
-    width: 50%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
 
+.destinations {
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    display: none;
+}
+
+.empty-box {
+    width: 100%;
+    height: 100px;
+}
+
 /* 여행 계획 크기 설정 */
 .plan {
-    width: 50%;
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
     visibility: show;
 }
-
 
 
 /* 지역 div + 출발지 설정 div + 선택한 여행지 div */
@@ -143,11 +152,18 @@ button {
 }
 
 /* 펼치기 버튼 설정 */
-.펼치기 {
+.expend {
     height: 100%;
     display: flex;
     align-items: center;
     font-size: 3rem;
+}
+
+.locaContents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* 여행 계획 제목 */
@@ -240,7 +256,7 @@ button {
 }
 
 /* 저장 버튼 크기, 색상 설정 */
-.저장 {
+.save {
     width: 64px;
     height: 43px;
     background-color: black;
@@ -263,6 +279,7 @@ button {
     border-radius: 5px;
     border-top-left-radius:00px;
     border-bottom-left-radius:00px;
+    cursor: pointer;
 }
 
 .left-arrow {
@@ -271,6 +288,7 @@ button {
     display: flex;
     justify-self: center;
     align-items: center;
+    transition: ease;
 }
 
 /* 이용방벙 버튼 크기, 위치 설정*/
@@ -313,3 +331,5 @@ button {
     object-fit: cover;
 
 }
+
+
