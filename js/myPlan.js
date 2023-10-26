@@ -10,7 +10,7 @@ var map = new kakao.maps.Map(container, options);
 
 };
 
-/* 선택한 여행지 div 숨기기 */
+/* 오른쪽 div 숨기기 */
 const hidden = document.querySelector('.storage');
 const plan = document.querySelector('.right-side');
 const arrow = document.getElementById('arrow');
@@ -27,25 +27,39 @@ hidden.addEventListener('click', () => {
       }
 });
 
-/* 출발지 div 펼치기 */
+/* div 펼치기/접기 */
 const expend = document.querySelectorAll(".expend");
 const destinations = document.querySelectorAll(".destinations");
-var newContent = "-";
 for (let i = 0; i < expend.length; i++) {
     expend[i].addEventListener('click', () => {
     
-        for(let i = 0; i < destinations.length; i++) {
-
             if(destinations[i].style.display == 'none') {
                 destinations[i].style.display = 'block';
-                expend.innerHTML = newContent;
+                expend[i].innerText="-";
             }else {
                 destinations[i].style.display = 'none';
-                
+                expend[i].innerText="+";
             }
         }
 
+    )
+}
+
+
+
+const cansle = document.querySelectorAll(".cansle-button");
+const dugod = document.querySelectorAll(".선택한여행지");
+const leftList = document.querySelectorAll(".destinations");
+const rightList = document.querySelector("#rightList")
+
+for(let i = 0; i < cansle.length; i++) {
+    cansle[i].addEventListener('click', () => {
+
+        if(leftList > dugod[i]) {
+            dugod[i].innerHTML += rightList ;
+        }
     })
+    
 }
 
 
