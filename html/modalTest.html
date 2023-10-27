@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 이동</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .session {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+            transition: transform 0.5s;
+        }
+
+        .right-session {
+            transform: translateX(100%);
+        }
+
+        #move-button {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <!-- 첫 번째 버튼과 모달 -->
-    <button id="shareBtn1">공유 버튼 1</button>
-    <button id="deleteBtn1">삭제 버튼 1</button>
-    <div id="myModal1" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeBtn1">&times;</span>
-            <p>첫 번째 모달 내용을 여기에 추가합니다.</p>
+    <div class="container">
+        <div class="session left-session">
+            왼쪽 session
+        </div>
+        <div class="session right-session">
+            오른쪽 session
         </div>
     </div>
+    <button id="move-button">이동</button>
 
-    <!-- 두 번째 버튼와 모달 -->
-    <button id="shareBtn2">공유 버튼 2</button>
-    <button id="deleteBtn2">삭제 버튼 2</button>
-    <div id="myModal2" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeBtn2">&times;</span>
-            <p>두 번째 모달 내용을 여기에 추가합니다.</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script>
+        const moveButton = document.getElementById('move-button');
+        const leftSession = document.querySelector('.left-session');
+        const rightSession = document.querySelector('.right-session');
+
+        moveButton.addEventListener('click', () => {
+            // 왼쪽 session과 오른쪽 session의 클래스를 교환
+            leftSession.classList.toggle('right-session');
+            rightSession.classList.toggle('right-session');
+        });
+    </script>
 </body>
 </html>

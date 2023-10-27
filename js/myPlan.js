@@ -48,18 +48,35 @@ for (let i = 0; i < expend.length; i++) {
 
 
 const cansle = document.querySelectorAll(".cansle-button");
-const dugod = document.querySelectorAll(".선택한여행지");
-const leftList = document.querySelectorAll(".destinations");
-const rightList = document.querySelector("#rightList")
+const divDes = document.querySelector('.destinations');
+const rightList = document.getElementById('rightList');
 
-for(let i = 0; i < cansle.length; i++) {
+for (let i = 0; i < cansle.length; i++) {
     cansle[i].addEventListener('click', () => {
+        const selectedDestination = divDes.querySelector(".선택한여행지");
+        const selectedRightList = rightList.querySelector(".선택한여행지");
 
-        if(leftList > dugod[i]) {
-            dugod[i].innerHTML += rightList ;
+ 
+        if (selectedDestination) {
+
+            divDes.removeChild(selectedDestination);
+            rightList.appendChild(selectedDestination);
+
+        } else if(selectedRightList) {
+
+            rightList.removeChild(selectedRightList);
+            divDes.appendChild(selectedRightList);
+            
         }
-    })
+
     
+        
+    });
 }
+
+
+
+
+
 
 

@@ -155,6 +155,8 @@ button {
     height: 150px;
     display: flex;
     flex-direction: column;
+
+    
 }
 
 /* 펼치기 버튼 설정 */
