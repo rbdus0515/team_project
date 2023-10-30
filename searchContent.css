@@ -6,10 +6,6 @@
     font-style: normal;
 }
 
-/* div, section {
-    border: 1px solid black;
-} */
-
 /* 탑버튼 부드럽게 올리기 */
 html {
     scroll-behavior: smooth;
@@ -40,10 +36,11 @@ body > section {
     background-position: center;
     width: 100%;
     height: auto;
+    line-height: 250px;
 }
 
-/* center */
-#center {
+/* main */
+#main {
     display: flex;
     height: auto;
 }
@@ -63,6 +60,7 @@ body > section {
 .searchResult {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 /* 검색 정보 */
@@ -190,6 +188,23 @@ body > section {
 /* bottom */
 #bottom {
     flex-basis: 10%;
+}
+
+/* upBtn */
+#upBtn {
+    width: 50px;
+    background-color: transparent;
+    scroll-behavior: smooth;
+    position: fixed;
+    top: 93.8%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    background-color: #dedede;
+    border-radius: 50px;
+}
+
+#upBtn:hover {
+    cursor: pointer;
 }
 
 
