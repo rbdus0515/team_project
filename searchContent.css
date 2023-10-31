@@ -143,7 +143,6 @@ body > section {
     border-radius: 5px;
     margin: 10px;
     display: flex;
-    /* align-items: center; */
     overflow-y: scroll;
 }
 
@@ -185,11 +184,6 @@ body > section {
     flex-basis: 5%;
 }
 
-/* bottom */
-#bottom {
-    flex-basis: 10%;
-}
-
 /* upBtn */
 #upBtn {
     width: 50px;
@@ -206,7 +200,6 @@ body > section {
 #upBtn:hover {
     cursor: pointer;
 }
-
 
 /* 반응형 모바일 기준 */
 /* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용 */
